@@ -1,0 +1,23 @@
+# requirements.txt — pinned dependencies for kiro-scan-demo
+#
+# To install:
+#   pip install -r requirements.txt
+#
+# To regenerate after adding packages:
+#   pip freeze > requirements.txt
+
+# Web framework
+Flask==2.3.3
+Werkzeug==2.3.7
+
+# Cryptographically signed session tokens (replaces pickle)
+# https://itsdangerous.palletsprojects.com/
+itsdangerous==2.1.2
+
+# Password hashing — bcrypt with configurable work factor (replaces MD5)
+# https://pypi.org/project/bcrypt/
+bcrypt==4.1.3
+
+# Rate limiting on /login and /register (brute-force protection)
+# https://flask-limiter.readthedocs.io/
+Flask-Limiter==3.5.0
